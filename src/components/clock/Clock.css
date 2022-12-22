@@ -1,0 +1,10 @@
+.clock-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+  background-color: var(--overlay);
+  color:var(--text);
+  border: 2px solid var(--rose);
+  padding: 10px;
+}
+

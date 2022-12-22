@@ -1,0 +1,10 @@
+.textbox{
+  width: 100%;
+  background-color: var(--overlay);
+  color: var(--text);
+  resize: none;
+  padding: 10px;
+  border: 2px solid var(--rose);
+  font-family: 'Montserrat', sans-serif;
+}
+

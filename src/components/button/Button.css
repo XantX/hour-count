@@ -1,0 +1,19 @@
+.button-container {
+}
+
+.button-component {
+  background-color: var(--rose);
+  border: 0;
+  color: var(--base);
+  padding: 10px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button-component:hover {
+  background-color: var(--gold);
+  cursor: pointer;
+}
+.button-component:active {
+  background-color: var(--iris);
+}

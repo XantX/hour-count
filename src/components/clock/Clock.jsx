@@ -28,7 +28,7 @@ export const Clock = ({ type = 'timer', startState }) => {
   useEffect(() => {
     console.log(type, "Timer", startState)
     if( type == 'clock') { startState = true; updateTimerWithCurrentTime(time) }
-  }, [])
+  }, [startState])
 
   useEffect(() => {
     console.log(type, "Timer", startState)
@@ -40,7 +40,7 @@ export const Clock = ({ type = 'timer', startState }) => {
         clearInterval(interval);
       }
     }
-  }, [])
+  }, [startState])
 
   return (
     <div className="clock-container">

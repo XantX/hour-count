@@ -3,8 +3,21 @@
   background-color: var(--overlay);
   color: var(--text);
   resize: none;
-  padding: 10px;
-  border: 2px solid var(--rose);
   font-family: 'Montserrat', sans-serif;
+  border: 0px;
+}
+.textbox:active {
+  border: 0px;
+}
+.textbox:focus-visible {
+  border: 0px;
+  outline: none;
+}
+.textbox-container {
+  background-color: var(--overlay);
+  width: 50%;
+  border: 2px solid var(--rose);
+  padding: 10px;
+
 }
 

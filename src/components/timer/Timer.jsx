@@ -1,18 +1,10 @@
 import { useState, useEffect } from 'react'
-import './Clock.css'
-
-export const Clock = () => {
+import './Timer.css'
+export const Timer = ({ startState }) => {
   const time = {
     hour: 0,
     min: 0,
     sec: 0 
-  }
-  const updateTimerWithCurrentTime = (time) => {
-    const date = new Date()
-    time.hour = date.getHours()
-    time.min = date.getMinutes()
-    time.sec = date.getSeconds()
-    return time
   }
   const [timer, setTimer] = useState(time);
   const updateTime = () => {
@@ -25,20 +17,17 @@ export const Clock = () => {
     })
   }
   useEffect(() => {
-    updateTimerWithCurrentTime(time)
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      updateTime()
-    }, 1000);
-    return () => {
-      clearInterval(interval);
+    if(startState) {
+      const interval = setInterval(() => {
+        updateTime()
+      }, 1000);
+      return () => {
+        clearInterval(interval);
+      }
     }
-  }, [])
-
+  }, [startState])
   return (
-    <div className="clock-container">
+    <div className="timer-container">
       <div className="number">{timer.hour < 10? '0' + timer.hour: timer.hour}</div> :
       <div className="number">{timer.min < 10? '0' + timer.min: timer.min}</div> :
       <div className="number">{timer.sec < 10? '0' + timer.sec: timer.sec}</div>

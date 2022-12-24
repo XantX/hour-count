@@ -1,9 +1,9 @@
 
 import './TextBox.css'
-export const TextBox = () => {
+export const TextBox = ({ handleChange }) => {
   return (
     <div className='textbox-container'>
-      <textarea className='textbox'>
+      <textarea onChange={handleChange} className='textbox'>
       </textarea>
     </div>
   )

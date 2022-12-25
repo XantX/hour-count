@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Timer.css'
-export const Timer = ({ startState }) => {
+export const Timer = ({ handleStop, startState }) => {
   const time = {
     hour: 0,
     min: 0,
@@ -18,6 +18,7 @@ export const Timer = ({ startState }) => {
   }
   useEffect(() => {
     if(startState) {
+      handleStop(`${timer.hour}:${timer.min}:${timer.sec}`)
       const interval = setInterval(() => {
         updateTime()
       }, 1000);

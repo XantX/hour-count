@@ -1,7 +1,8 @@
 .button-container {
+  width: 100%;
 }
-
 .button-component {
+  width: 100%;
   background-color: var(--rose);
   border: 0;
   color: var(--base);

@@ -2,6 +2,7 @@
 .timer-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-size: 50px;
   background-color: var(--overlay);
   color:var(--text);

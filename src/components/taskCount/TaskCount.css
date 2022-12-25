@@ -1,0 +1,11 @@
+.task-box-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.task-box-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

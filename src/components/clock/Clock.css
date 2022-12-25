@@ -6,5 +6,6 @@
   color:var(--text);
   border: 2px solid var(--rose);
   padding: 10px;
+  justify-content: center;
 }
 

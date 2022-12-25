@@ -1,0 +1,25 @@
+.header {
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+
+.header-title {
+  color: var(--text);
+}
+
+.header-timer-container {
+  width: 250px;
+}
+
+.main-section {
+  width: 100%;
+}
+
+.left-side-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

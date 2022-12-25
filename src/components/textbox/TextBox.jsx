@@ -1,9 +1,8 @@
-
 import './TextBox.css'
-export const TextBox = ({ handleChange }) => {
+export const TextBox = ({ disable, value, handleChange, placeholder }) => {
   return (
     <div className='textbox-container'>
-      <textarea onChange={handleChange} className='textbox'>
+      <textarea disabled={disable} value={value} placeholder={placeholder} onChange={handleChange} className='textbox'>
       </textarea>
     </div>
   )

@@ -1,10 +1,10 @@
 .textbox{
-  width: 100%;
   background-color: var(--overlay);
   color: var(--text);
   resize: none;
   font-family: 'Montserrat', sans-serif;
   border: 0px;
+  width: 100%;
 }
 .textbox:active {
   border: 0px;
@@ -13,9 +13,11 @@
   border: 0px;
   outline: none;
 }
+.textbox::placeholder{
+  color: var(--rose)
+}
 .textbox-container {
   background-color: var(--overlay);
-  width: 50%;
   border: 2px solid var(--rose);
   padding: 10px;
 

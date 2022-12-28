@@ -7,7 +7,6 @@ export const TaskCount = () => {
   const [start, setStart] = useState(false)
   const [taskDescription, setTaskDescription] = useState("")
   const [time, setTime] = useState("")
-  console.log(time)
   const handleStartTimer = () => {
     setStart(!start)
   }
@@ -17,7 +16,6 @@ export const TaskCount = () => {
   const handleStop = (time) => {
     setTime(time)
   }
-  console.log(taskDescription)
   return (
     <div className='task-box-container'>
       <Timer handleStop={handleStop} startState={start}/>
@@ -25,7 +23,7 @@ export const TaskCount = () => {
         <TextBox disable={start} value={taskDescription} handleChange={handleChangeDescription} placeholder={"Describe your task"}/>
       </div>
       <div className='task-box-button-container'>
-        <Button text={ !start?"Start Task":"Stop Task"} onClick={ handleStartTimer } />
+        <Button text={ !start ? "Start Task" : "Stop Task" } value={start} onClick={ handleStartTimer } />
       </div>
     </div>
   )

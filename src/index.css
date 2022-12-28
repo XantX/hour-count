@@ -28,3 +28,10 @@
   color: var(--text);
 }
 
+.color-love {
+  color: var(--love) !important;
+}
+
+.bg-color-love {
+  background-color: var(--love) !important;
+}
